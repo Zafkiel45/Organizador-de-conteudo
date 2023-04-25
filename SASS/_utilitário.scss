@@ -1,0 +1,12 @@
+@use "sass:math";
+$color-aside: #F9F6F9;
+$shadow-aside: #D3D1E8;
+$color-body: #EFEEFE;
+$color-container: #ffff;
+$color-font: #8984B6;
+$color-svg: #C2C0D9;
+$shadow-card: hsla(0, 0%, 0%, 0.24);
+
+@function conversor($alvo, $contexto) {
+    @return #{math.div($alvo, $contexto)}em 
+}

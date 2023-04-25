@@ -1,0 +1,89 @@
+@use 'utilitário' as colors; 
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    .about {
+        display: flex; 
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 700px;
+        background-color: colors.$color-container;
+        margin-top: 10%;
+        padding: colors.conversor(20px, 16px);
+        border-top-left-radius: 1.25em;
+        border-top-right-radius: 1.25em;
+        border-bottom: 1px solid #D8D8D8;
+        .button_about {
+            border: none;
+            background-color: transparent;
+        }
+        .arrow_about {
+            width: 20px;
+            height: 20px;
+        }
+        .svg_about {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .hidden_about {
+        width: 700px;
+        background-color: colors.$color-container;
+        padding: 0;
+        transition: 0.9s;
+        height: 0px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        border-bottom-left-radius: 1.25em;
+        border-bottom-right-radius: 1.25em;
+        .about_list {
+            width: 100%; 
+            display: flex; 
+            justify-content: space-between;
+            padding: 0 2.5em;
+            gap: colors.conversor(24px, 16px);
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        .item_hidden_about {
+            background-color: #EFEEFE;
+            display: flex;
+            width: 250px;
+            padding:  1.25em 0.56em;
+            border-radius: colors.conversor(10px, 16px);
+            box-shadow: 0px 4px 4px colors.$shadow-card;
+        }
+        .self {
+            align-self: flex-start;
+        }
+        .texto {
+            width: 100%;
+            text-align: center;
+        }
+        .svg_item {
+            position: relative;
+            left: 30px;
+            width: 20px;
+            height: 20px;
+        }
+        a {
+            text-decoration: none;
+            &:link  {
+                color: colors.$color-font;
+            }
+            &:focus {
+                color: colors.$color-font;
+            }
+            &:visited {
+                color: colors.$color-font;
+            }
+            &:hover {
+                color: colors.$color-font;
+            }
+        }
+    }
+}
