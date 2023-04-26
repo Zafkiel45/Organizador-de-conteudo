@@ -6,6 +6,7 @@ const hidden_html = document.querySelector('#hidden_html');
 const hidden_css = document.querySelector('#hidden_css');
 const button_about = document.querySelectorAll('.button_about');
 const hidden_about_html = document.querySelector('#hidden_html_about');
+const hidden_about_css = document.querySelector('#hidden_css_about')
 aside.style.height = `${body.clientHeight + 200}px`
 
 buttons.forEach(function(item, index){
@@ -19,6 +20,7 @@ buttons.forEach(function(item, index){
 button_about.forEach(function(item, index){
     item.addEventListener('click', function(){
         hiddenCardHtml(index)
+        hiddenCardCss(index)
     })
 })
 
@@ -30,6 +32,18 @@ function hiddenCardHtml(h){
         } else {
             hidden_about_html.style.height = '0'
             hidden_about_html.style.padding = '0'
+
+        }   
+    }
+}
+function hiddenCardCss(c){
+    if(c == 1) {
+        if(hidden_about_css.classList.toggle('css_about')){
+            hidden_about_css.style.height = '520px'
+            hidden_about_css.style.padding = '1.25em'
+        } else {
+            hidden_about_css.style.height = '0'
+            hidden_about_css.style.padding = '0'
 
         }   
     }

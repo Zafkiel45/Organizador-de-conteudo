@@ -69,6 +69,7 @@ body {
   gap: 1.5em;
   flex-wrap: wrap;
   list-style: none;
+  overflow: hidden scroll;
 }
 #container .hidden_about .item_hidden_about {
   background-color: #EFEEFE;

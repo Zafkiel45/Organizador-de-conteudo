@@ -48,6 +48,8 @@
             gap: colors.conversor(24px, 16px);
             flex-wrap: wrap;
             list-style: none;
+            overflow: hidden scroll;
+
         }
         .item_hidden_about {
             background-color: #EFEEFE;
