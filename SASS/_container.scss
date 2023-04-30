@@ -8,13 +8,12 @@
     .about {
         display: flex; 
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         width: 700px;
         background-color: colors.$color-container;
         margin-top: 10%;
         padding: colors.conversor(20px, 16px);
-        border-top-left-radius: 1.25em;
-        border-top-right-radius: 1.25em;
+        border-radius: 1.25em;
         border-bottom: 1px solid #D8D8D8;
         .button_about {
             border: none;
